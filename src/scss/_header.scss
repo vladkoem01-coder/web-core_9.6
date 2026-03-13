@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Comic';
+  src: url('../fonts/comic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-bottom: 1px solid #41F6D7;
+  padding: 15px;
+  background-color: white;
+    .header__img{
+        display: flex;
+        gap: 16px;
+    }
+    .header__img__right{
+       display: flex;
+       gap: 16px; 
+    }
+
+    .header-menu{
+    display: none;
+}
+}
+
+
+@media (min-width: 700px){
+    body{
+        background-color: red;
+    }
+}
+
+
+@media (min-width:700px){
+   .test-media {
+      background: red;
+   }
+}
+    // .header__img{
+    //         display: none;
+    //     .header__img__right{
+    //         display: none
+    //     }
+    // }
+
+    // .header-menu{
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+
+    //     .header-menu__left{
+    //     font-size: larger;
+    //     display: inline-flex;
+    //     width: 400px;
+    //     }
+
+    //     .header-menu__right{
+    //     display: inline-flex;
+    //     align-items: center;
+    //     margin-right: 32px;
+    //     gap: 32px;
+    //     }
+
+    //     .menu-item{
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 8px;
+    //     }
+
+    // }
+    // }
