@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -10,35 +10,61 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-   <div class="header">
-     <div class="header__img">
-        <img src="img/burger.svg" alt="menu">
-        <img src="img/divider.svg" alt="divider" class="page__img__tablet">
-        <img src="img/Group.png" alt="logo">
-     </div> 
-     <div class="header__img__right">
-        <img src="img/divider.svg" alt="line">
-        <img src="img/repair.svg" alt="repair">
-        <img src="img/finder.svg" alt="finder">
+
+<!-- MOBILE / TABLET HEADER -->
+<header class="header">
+  <div class="header__left">
+    <img src="img/burger.svg" alt="menu">
+
+    <img src="img/divider.svg" alt="divider" class="header__divider-tablet">
+
+    <img src="img/Group.png" alt="logo">
+  </div>
+
+  <div class="header__right">
+    <img src="img/divider.svg" alt="line">
+    <img src="img/repair.svg" alt="repair">
+    <img src="img/finder.svg" alt="finder">
+  </div>
+</header>
+
+<!-- DESKTOP MENU -->
+<section class="upper-menu">
+  <h2>Услуги и сервисы</h2>
+
+  <div class="upper-menu__right">
+    <div class="menu-item">
+      <span>Оставить заявку</span>
+      <img src="img/repair.svg" alt="">
     </div>
 
-      <div class="header-menu">
-        <div class="header-menu__left">
-        <h2>Услуги и сервисы</h2>
-        </div>
-        <div class="header-menu__right">
-            <div class="menu-item">
-                <span>Оставить заявку</span>
-                <img src="img/repair.svg" alt="repair">
-            </div>
-            <div class="menu-item">
-                <span>Статус ремонта</span>
-                <img src="img/finder.svg" alt="status repair">
-            </div>
-        </div>
+    <div class="menu-item">
+      <span>Статус ремонта</span>
+      <img src="img/finder.svg" alt="">
     </div>
+  </div>
+</section>
 
-    </div> 
+      <!-- слайд меню + текст-->
+<div class="slide-menu">
+            <button class="slide-menu__item">Ремонтируемые бренды</button>
+            <button class="slide-menu__item">Ремонтируемые устройства</button>
+            <button class="slide-menu__item">Цены на услуги</button>
+            <button class="slide-menu__item">Адреса сервисных центров</button>
+            <button class="slide-menu__item">Специальные цены</button>
+            <button class="slide-menu__item">Отзывы</button>
+        </div>
+        <div class="text">
+            <div class="text-block">
+                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                <p class="tab-version-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="desktop-version-text">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                <img src="img/ReadMore Copy.svg" class="readmore" alt="ReadMore">
+            </div>
+                <img src="img/image.svg" alt="first-block" class="main-image">
+        </div>
+       
+
+    </div>
 
      
 

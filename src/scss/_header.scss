@@ -1,75 +1,87 @@
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
+$accent-cyan: #41F6D7;
+$bg-white: #fff;
+
+$tablet: 768px;
+$desktop: 1120px;
+
+$gap-mobile: 15px;
+$gap-tablet: 20px;
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  gap: $gap-mobile;
+  background: $bg-white;
+  border-bottom: 1px solid $accent-cyan;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: $gap-mobile;
+
+    @media (min-width: $tablet) {
+      gap: $gap-tablet;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: $gap-mobile;
+
+    @media (min-width: $tablet) {
+      gap: $gap-tablet;
+    }
+  }
+
+  &__divider-tablet {
+    display: none;
+
+    @media (min-width: $tablet) {
+      display: block;
+    }
+  }
 }
 
-.header{
+/* DESKTOP MENU */
+
+.upper-menu {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h2 {
+    border-left: 4px solid $accent-cyan;
+    padding-left: 16px;
+    font-size: 28px;
+    margin: 0;
+  }
+
+  &__right {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.menu-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  border-bottom: 1px solid #41F6D7;
-  padding: 15px;
-  background-color: white;
-    .header__img{
-        display: flex;
-        gap: 16px;
-    }
-    .header__img__right{
-       display: flex;
-       gap: 16px; 
-    }
+  gap: 10px;
+  cursor: pointer;
 
-    .header-menu{
-    display: none;
+  span {
+    font-weight: 500;
+  }
 }
-}
-
-
-@media (min-width: 700px){
-    body{
-        background-color: red;
-    }
-}
-
-
-@media (min-width:700px){
-   .test-media {
-      background: red;
-   }
-}
-    // .header__img{
-    //         display: none;
-    //     .header__img__right{
-    //         display: none
-    //     }
-    // }
-
-    // .header-menu{
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-
-    //     .header-menu__left{
-    //     font-size: larger;
-    //     display: inline-flex;
-    //     width: 400px;
-    //     }
-
-    //     .header-menu__right{
-    //     display: inline-flex;
-    //     align-items: center;
-    //     margin-right: 32px;
-    //     gap: 32px;
-    //     }
-
-    //     .menu-item{
-    //     display: flex;
-    //     align-items: center;
-    //     gap: 8px;
-    //     }
-
-    // }
-    // }
