@@ -8,7 +8,6 @@ $gap-mobile: 15px;
 $gap-tablet: 20px;
 
 /* HEADER */
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -51,8 +50,18 @@ $gap-tablet: 20px;
   }
 }
 
-/* DESKTOP MENU */
+.about {
+    
+    border-left: 4px solid $accent-cyan;
+    padding-left: 16px;
+    margin: 0;
+    color: black;
+    @media(min-width: $desktop){
+        display: none;
+    }
+}
 
+/* DESKTOP MENU */
 .upper-menu {
   display: none;
 
@@ -60,6 +69,7 @@ $gap-tablet: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #F8F8F8;
   }
 
   h2 {
@@ -67,11 +77,13 @@ $gap-tablet: 20px;
     padding-left: 16px;
     font-size: 28px;
     margin: 0;
+    color: black;
   }
 
   &__right {
     display: flex;
     gap: 32px;
+    color: black;
   }
 }
 

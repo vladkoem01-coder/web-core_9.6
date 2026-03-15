@@ -1,4 +1,5 @@
 @import "./header";
+@import "./_main-menu";
 
 $bgColor: #24292e;
 $text: #fff;
@@ -14,6 +15,6 @@ body {
   padding: 1rem;
   margin: 0;
   font-family: Comic, sans-serif;
-  background-color: $bgColor;
+  background-color: #f8f8f8;
   color: $text;
 }
