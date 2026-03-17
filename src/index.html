@@ -10,22 +10,66 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
+    <!-- боковое меню -->
+     <div class="left-menu">
+    <div class="left-menu-header">
+        <img src="img/burger.svg" class="left-icon" alt="cancel">
+        <img src="img/Group.png" class="left-icon" alt="logo">
+        <img src="img/finder.svg" class="right-icon" alt="finder">
+    </div>
+    
+    <div class="servis">
+            <button class="servis__item"> Ремонт Тeхники</button>
+            <button class="servis__item">Услуги и сервисы</button>
+            <button class="servis__item">Корпоративным клиентам</button>
+            <button class="servis__item">Продавцам Техники</button>
+            <button class="servis__item">Партнерам</button>
+            <button class="servis__item">Производителям</button>
+            <button class="servis__item">Наши сервесные центры</button>
+            <button class="servis__item">Контакты</button>
+    </div>
+
+    <div class="contact-inf">
+        <div class="inf-type">
+            <img src="img/call.svg" alt="calls">
+            <img src="img/chat.svg" alt="chats">
+            <img src="img/profile.svg" alt="your profile">
+        </div>
+
+         <div>
+            mail@cps.com
+         </div>
+        <div class="contact-number">
+            <strong>8 800 890 8900</strong> 
+        </div>
+    </div>
+     <div class="lang">
+            <div class="lang_item">RU</div>
+            <div class="lang_item">EN</div>
+            <div class="lang_item">CH</div>
+        </div>    
+</div>
 
 <!-- MOBILE / TABLET HEADER -->
+ <div class="main-content">
 <header class="header">
+
   <div class="header__left">
-    <img src="img/burger.svg" alt="menu">
+    <button class="burger">
+      <img src="img/burger.svg" alt="menu">
+    </button>
 
-    <img src="img/divider.svg" alt="divider" class="header__divider-tablet">
-
+    <img src="img/divider.svg" class="header__divider-tablet" alt="">
     <img src="img/Group.png" alt="logo">
   </div>
 
   <div class="header__right">
-    <img src="img/divider.svg" alt="line">
-    <img src="img/repair.svg" alt="repair">
-    <img src="img/finder.svg" alt="finder">
+    <img src="img/divider.svg" alt="">
+    <img src="img/repair.svg" alt="">
+    <img src="img/finder.svg" alt="">
   </div>
+
+</header>
 </header>
 
 <!-- DESKTOP MENU -->
@@ -65,12 +109,14 @@
             </div>
                 <img src="img/image.svg" alt="first-block" class="main-image">
         </div>
-       
 
-    </div>
+
+    
 
      
 
-    
+</div>
   </body>
 </html>
+
+

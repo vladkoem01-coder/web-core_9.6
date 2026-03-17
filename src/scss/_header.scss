@@ -22,9 +22,15 @@ $gap-tablet: 20px;
   }
 
   &__left {
+    background: none;
+    border: none;
     display: flex;
     align-items: center;
     gap: $gap-mobile;
+    .burger{
+      background: none;
+      border: none;
+    }
 
     @media (min-width: $tablet) {
       gap: $gap-tablet;

@@ -1,0 +1,123 @@
+// ===== VARIABLES =====
+$sidebar-width: 320px;
+$sidebar-bg: #fff;
+$sidebar-shadow: 16px 0 52px 0 #0E185033;
+$accent: #41F6D7;
+$text-hover: #7E7E82;
+$transition: 0.3s ease;
+
+// ===== SIDEBAR =====
+.left-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: $sidebar-width;
+  height: 100vh;
+  background: $sidebar-bg;
+  box-shadow: $sidebar-shadow;
+  z-index: 100;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: transform $transition;
+
+  // ===== HEADER =====
+  &-header {
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+  }
+
+  // ===== SERVICE MENU =====
+  .servis {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 50px;
+
+    &__item {
+      display: flex;
+      background: transparent;
+      border: none;
+      font-size: 16px;
+      padding-left: 24px;
+      cursor: pointer;
+
+      &:hover {
+        border-left: 4px solid $accent;
+        color: $text-hover;
+      }
+    }
+  }
+
+  // ===== CONTACT =====
+  .contact-inf {
+    margin-top: auto;
+    margin-left: 24px;
+    margin-bottom: 40px;
+    color: black;
+
+    .inf-type {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .contact-number {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  // ===== LANG =====
+  .lang {
+    display: flex;
+    gap: 7px;
+    color: black;
+    margin-left: 24px;
+    margin-bottom: 32px;
+
+    &_item {
+      cursor: pointer;
+
+      &:hover {
+        color: $text-hover;
+      }
+    }
+  }
+}
+
+// ===== ICONS =====
+.left-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.right-icon {
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+// ===== MOBILE STATE =====
+@media (max-width: 1119px) {
+  .left-menu {
+    transform: translateX(-100%);
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
+
+// ===== DESKTOP STATE =====
+@media (min-width: 1120px) {
+  .left-menu {
+    transform: translateX(0);
+  }
+
+  body {
+    margin-left: $sidebar-width;
+  }
+}
