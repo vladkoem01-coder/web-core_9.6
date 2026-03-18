@@ -1,15 +1,20 @@
 import '../scss/style.scss'
 
-console.log('It works!')
-
 const menu = document.querySelector('.left-menu')
-const btn = document.querySelector('.burger')
+const openBtn = document.querySelector('.burger')
+const closeBtn = document.querySelector('.left-menu-remove')
 
-btn.addEventListener('click', () => {
-  menu.classList.toggle('active')
+openBtn.addEventListener('click', () => {
+  menu.classList.add('active')
+})
+closeBtn.addEventListener('click', () => {
+  menu.classList.remove('active')
 })
 
-document.addEventListener('DOMContentLoaded', () => {
+
+
+
+ document.addEventListener('DOMContentLoaded', () => {
 
   const swiper = new Swiper('.swiper', {
     slidesPerView: 'auto',
@@ -39,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  button.addEventListener('click', () => {
+button.addEventListener('click', () => {
     if (!isOpen) {
       container.style.height = container.scrollHeight + 'px';
       button.textContent = 'Скрыть';
@@ -54,4 +59,3 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', updateLayout);
 
 });
-

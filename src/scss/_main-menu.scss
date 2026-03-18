@@ -1,6 +1,9 @@
-$color-white: #FFFFFF;
-$color-accent: #B8FFEC;
-$desktop: 1120px;
+@use 'variables' as *;
+
+@font-face{
+    font-family: 'TTLakes';
+    src: url(../fonts/TTLakes/TTLakes-Regular.ttf) format("truetype");
+} 
 
 .slide-menu {
   display: flex;
@@ -36,7 +39,7 @@ $desktop: 1120px;
 .text {
   display: flex;
   width: 100%;
-  border: 2px solid $color-white;
+  border: 2px solid $white;
   color: black;
 }
 

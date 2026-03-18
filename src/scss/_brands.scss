@@ -1,32 +1,10 @@
-$bg-gradient: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
-$border-accent: #D9FFF5;
-$border-card: #EAEAEA;
-$text-main: #1B1C21;
-$accent: #41F6D7;
-$white: #fff;
+@use 'variables' as *;
+@use 'mixin' as *;
 
-$desktop: 1120px;
-
-$radius: 6px;
-
-@mixin flex-between {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@font-face {
+  font-family: 'TTLakes';
+  src: url(../fonts/TTLakes/TTLakes-Regular.ttf) format('truetype');
 }
-
-@mixin grid-cols($n) {
-  display: grid;
-  grid-template-columns: repeat($n, 1fr);
-  gap: 16px;
-}
-
-@mixin btn-reset {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 h1 {
   background: $bg-gradient;
   font-size: 16px;
@@ -53,7 +31,7 @@ h1 {
 
   @media (min-width: $desktop) {
     display: grid;
-    height: 160px;
+    // height: 160px;
     overflow: hidden;
   }
 }
@@ -111,4 +89,3 @@ h1 {
     color: $accent;
   }
 }
-

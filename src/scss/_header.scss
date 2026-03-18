@@ -1,11 +1,9 @@
-$accent-cyan: #41F6D7;
-$bg-white: #fff;
+@use 'variables' as *;
 
-$tablet: 768px;
-$desktop: 1120px;
-
-$gap-mobile: 15px;
-$gap-tablet: 20px;
+@font-face{
+    font-family: 'TTLakes';
+    src: url(../fonts/TTLakes/TTLakes-Regular.ttf) format("truetype");
+}
 
 /* HEADER */
 .header {
@@ -32,7 +30,7 @@ $gap-tablet: 20px;
       border: none;
     }
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       gap: $gap-tablet;
     }
   }
@@ -42,7 +40,7 @@ $gap-tablet: 20px;
     align-items: center;
     gap: $gap-mobile;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       gap: $gap-tablet;
     }
   }
@@ -50,7 +48,7 @@ $gap-tablet: 20px;
   &__divider-tablet {
     display: none;
 
-    @media (min-width: $tablet) {
+    @media (min-width: $desktop) {
       display: block;
     }
   }

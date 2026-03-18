@@ -1,0 +1,19 @@
+// Brands
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin grid-cols($n) {
+  display: grid;
+  grid-template-columns: repeat($n, 1fr);
+  gap: 16px;
+}
+
+@mixin btn-reset {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+

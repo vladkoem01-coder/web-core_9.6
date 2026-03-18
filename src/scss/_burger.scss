@@ -1,10 +1,8 @@
-$sidebar-width: 320px;
-$sidebar-bg: #fff;
-$sidebar-shadow: 16px 0 52px 0 #0E185033;
-$accent: #41F6D7;
-$text-hover: #7E7E82;
-$transition: 0.3s ease;
-
+@use 'variables' as *;
+@font-face{
+    font-family: 'TTLakes';
+    src: url(../fonts/TTLakes/TTLakes-Regular.ttf) format("truetype");
+}
 .left-menu {
   position: fixed;
   top: 0;
@@ -106,6 +104,7 @@ $transition: 0.3s ease;
 
   .left-menu {
     transform: translateX(0);
+    transition: 0.3s;
     position: fixed;
   }
 

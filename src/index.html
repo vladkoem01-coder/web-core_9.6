@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -7,248 +7,268 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <!-- боковое меню -->
-     <div class="left-menu">
-    <div class="left-menu-header">
-        <img src="img/burger.svg" class="left-icon" alt="cancel">
-        <img src="img/Group.png" class="left-icon" alt="logo">
-        <img src="img/finder.svg" class="right-icon" alt="finder">
-    </div>
-    
-    <div class="servis">
-            <button class="servis__item"> Ремонт Тeхники</button>
-            <button class="servis__item">Услуги и сервисы</button>
-            <button class="servis__item">Корпоративным клиентам</button>
-            <button class="servis__item">Продавцам Техники</button>
-            <button class="servis__item">Партнерам</button>
-            <button class="servis__item">Производителям</button>
-            <button class="servis__item">Наши сервесные центры</button>
-            <button class="servis__item">Контакты</button>
-    </div>
+    <div class="left-menu">
+      <div class="left-menu-header">
+        <button class="left-menu-remove">
+          <img src="img/burger.svg" class="left-icon" alt="cancel" />
+        </button>
+        <img src="img/Group.png" class="left-icon" alt="logo" />
+        <img src="img/finder.svg" class="right-icon" alt="finder" />
+      </div>
 
-    <div class="contact-inf">
+      <div class="servis">
+        <button class="servis__item"> Ремонт Тeхники</button>
+        <button class="servis__item">Услуги и сервисы</button>
+        <button class="servis__item">Корпоративным клиентам</button>
+        <button class="servis__item">Продавцам Техники</button>
+        <button class="servis__item">Партнерам</button>
+        <button class="servis__item">Производителям</button>
+        <button class="servis__item">Наши сервесные центры</button>
+        <button class="servis__item">Контакты</button>
+      </div>
+
+      <div class="contact-inf">
         <div class="inf-type">
-            <img src="img/call.svg" alt="calls">
-            <img src="img/chat.svg" alt="chats">
-            <img src="img/profile.svg" alt="your profile">
+          <img src="img/call.svg" alt="calls" />
+          <img src="img/chat.svg" alt="chats" />
+          <img src="img/profile.svg" alt="your profile" />
         </div>
 
-         <div>
-            mail@cps.com
-         </div>
+        <div> mail@cps.com </div>
         <div class="contact-number">
-            <strong>8 800 890 8900</strong> 
+          <strong>8 800 890 8900</strong>
         </div>
-    </div>
-     <div class="lang">
-            <div class="lang_item">RU</div>
-            <div class="lang_item">EN</div>
-            <div class="lang_item">CH</div>
-        </div>    
-</div>
-
-<!-- MOBILE / TABLET HEADER -->
- <div class="main-content">
-<header class="header">
-
-  <div class="header__left">
-    <button class="burger">
-      <img src="img/burger.svg" alt="menu">
-    </button>
-
-    <img src="img/divider.svg" class="header__divider-tablet" alt="">
-    <img src="img/Group.png" alt="logo">
-  </div>
-
-  <div class="header__right">
-    <img src="img/divider.svg" alt="">
-    <img src="img/repair.svg" alt="">
-    <img src="img/finder.svg" alt="">
-  </div>
-  
-</header>
-
-<!-- DESKTOP MENU -->
-<section class="upper-menu">
-  <h2>Услуги и сервисы</h2>
-
-  <div class="upper-menu__right">
-    <div class="menu-item">
-      <span>Оставить заявку</span>
-      <img src="img/repair.svg" alt="">
+      </div>
+      <div class="lang">
+        <div class="lang_item">RU</div>
+        <div class="lang_item">EN</div>
+        <div class="lang_item">CH</div>
+      </div>
     </div>
 
-    <div class="menu-item">
-      <span>Статус ремонта</span>
-      <img src="img/finder.svg" alt="">
-    </div>
-  </div>
-</section>
-<div class="about">
-  <h2>Услуги и сервисы</h2>
-</div>
+    <!-- MOBILE / TABLET HEADER -->
+    <div class="main-content">
+      <header class="header">
+        <div class="header__left">
+          <button class="burger">
+            <img src="img/burger.svg" alt="menu" />
+          </button>
+
+          <img src="img/divider.svg" class="header__divider-tablet" alt="" />
+          <img src="img/Group.png" alt="logo" />
+        </div>
+
+        <div class="header__right">
+          <img src="img/divider.svg" alt="" />
+          <img src="img/repair.svg" alt="" />
+          <img src="img/finder.svg" alt="" />
+        </div>
+      </header>
+
+      <!-- DESKTOP MENU -->
+      <section class="upper-menu">
+        <h2>Услуги и сервисы</h2>
+
+        <div class="upper-menu__right">
+          <div class="menu-item">
+            <span>Оставить заявку</span>
+            <img src="img/repair.svg" alt="" />
+          </div>
+
+          <div class="menu-item">
+            <span>Статус ремонта</span>
+            <img src="img/finder.svg" alt="" />
+          </div>
+        </div>
+      </section>
+      <div class="about">
+        <h2>Услуги и сервисы</h2>
+      </div>
 
       <!-- слайд меню + текст-->
-<div class="slide-menu">
-            <button class="slide-menu__item">Ремонтируемые бренды</button>
-            <button class="slide-menu__item">Ремонтируемые устройства</button>
-            <button class="slide-menu__item">Цены на услуги</button>
-            <button class="slide-menu__item">Адреса сервисных центров</button>
-            <button class="slide-menu__item">Специальные цены</button>
-            <button class="slide-menu__item">Отзывы</button>
+      <div class="slide-menu">
+        <button class="slide-menu__item">Ремонтируемые бренды</button>
+        <button class="slide-menu__item">Ремонтируемые устройства</button>
+        <button class="slide-menu__item">Цены на услуги</button>
+        <button class="slide-menu__item">Адреса сервисных центров</button>
+        <button class="slide-menu__item">Специальные цены</button>
+        <button class="slide-menu__item">Отзывы</button>
+      </div>
+      <div class="text">
+        <div class="text-block">
+          <p
+            >Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.</p
+          >
+          <p class="tab-version-text"
+            >Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера<span class="desktop-version-text"
+              >, что подтверждает большое количество постоянных клиентов. Мы
+              гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.</span
+            ></p
+          >
+          <img src="img/ReadMore Copy.svg" class="readmore" alt="ReadMore" />
         </div>
-        <div class="text">
-            <div class="text-block">
-                <p>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-                <p class="tab-version-text">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="desktop-version-text">, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
-                <img src="img/ReadMore Copy.svg" class="readmore" alt="ReadMore">
-            </div>
-                <img src="img/image.svg" alt="first-block" class="main-image">
-        </div>
+        <img src="img/image.svg" alt="first-block" class="main-image" />
+      </div>
 
- <!-- различные бренды -->
-   <h1>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1>
+      <!-- различные бренды -->
+      <h1>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1>
 
-        <div class="swiper">
+      <div class="swiper">
         <div class="swiper-wrapper" id="swiperWrapper">
-    
-            <div class="swiper-slide slides">
-                <img src="img/acer.png" alt="Acer">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-             </div>
+          <div class="swiper-slide slides">
+            <img src="img/acer.png" alt="Acer" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="swiper-slide slides">
-                <img src="img/samsung.png" alt="Samsung">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="swiper-slide slides">
+            <img src="img/samsung.png" alt="Samsung" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-             <div class="swiper-slide slides">
-                <img src="img/lenovo.png" alt="Lenovo">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-             </div>
+          <div class="swiper-slide slides">
+            <img src="img/lenovo.png" alt="Lenovo" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="swiper-slide slides">
-                <img src="img/hp.png" alt="Hp">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="swiper-slide slides">
+            <img src="img/hp.png" alt="Hp" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-             <div class="swiper-slide slides">
-                <img src="img/acer.png" alt="Acer">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-             </div>
+          <div class="swiper-slide slides">
+            <img src="img/acer.png" alt="Acer" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="swiper-slide slides">
-                <img src="img/apple.png" alt="Apple">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="swiper-slide slides">
+            <img src="img/apple.png" alt="Apple" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="swiper-slide slides">
-                <img src="img/bosch.png" alt="Bosch">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="swiper-slide slides">
+            <img src="img/bosch.png" alt="Bosch" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="swiper-slide slides">
-                <img src="img/hp.png" alt="Hp">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="swiper-slide slides">
+            <img src="img/hp.png" alt="Hp" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="swiper-slide slides">
-                 <img src="img/sonic.png" alt="Sonic">
-                 <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="swiper-slide slides">
+            <img src="img/sonic.png" alt="Sonic" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="swiper-slide slides">
-                <img src="img/lenovo.png" alt="Lenovo">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-             </div>
+          <div class="swiper-slide slides">
+            <img src="img/lenovo.png" alt="Lenovo" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-              <div class="swiper-slide slides">
-                <img src="img/acer.png" alt="Acer">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-             </div>
+          <div class="swiper-slide slides">
+            <img src="img/acer.png" alt="Acer" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
         </div>
 
-            <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div>
+      </div>
 
-        </div>
-
-
-
-    <div class="grid">
+      <div class="grid">
         <div class="grid-wrapper">
-    
-             <div class="slides">
-                <img src="img/acer.png" alt="Acer">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/acer.png" alt="Acer" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="slides">
-                <img src="img/samsung.png" alt="Samsung">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/samsung.png" alt="Samsung" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="slides">
-                <img src="img/lenovo.png" alt="Lenovo">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/lenovo.png" alt="Lenovo" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="slides">
-                <img src="img/hp.png" alt="Hp">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/hp.png" alt="Hp" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="slides">
-                <img src="img/acer.png" alt="Acer">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/acer.png" alt="Acer" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="slides">
-                <img src="img/apple.png" alt="Apple">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/apple.png" alt="Apple" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="slides">
-                <img src="img/bosch.png" alt="Bosch">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/bosch.png" alt="Bosch" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="slides">
-                <img src="img/hp.png" alt="Hp">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/hp.png" alt="Hp" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="slides">
-                 <img src="img/sonic.png" alt="Sonic">
-                 <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/sonic.png" alt="Sonic" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="slides">
-                <img src="img/lenovo.png" alt="Lenovo">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/lenovo.png" alt="Lenovo" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
 
-            <div class="slides">
-                <img src="img/acer.png" alt="Acer">
-                <img src="img/go.svg" class="container-box-button-next" alt="Go">
-            </div>
+          <div class="slides">
+            <img src="img/acer.png" alt="Acer" />
+            <img src="img/go.svg" class="container-box-button-next" alt="Go" />
+          </div>
         </div>
+      </div>
 
+      <div id="show-more">
+        <img src="img/expand.svg" alt="Show all" />
+        <button id="buttonShowMore">Показать все</button>
+      </div>
     </div>
 
-<div id="show-more">
-    <img src="img/expand.svg" alt="Show all">
-    <button id="buttonShowMore">Показать все</button>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
+    <h1 class="repair-tech"> РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h1>
+    <div class="repair">
+      <div class="repair-item">Ремонт ноутбуков</div>
+      <img src="img/go.svg" alt="repair-item">
+      <div class="repair-item">Ремонт планшетов</div>
+      <img src="img/go.svg" alt="repair-item">
+      <div class="repair-item">Ремонт ПК</div>
+      <img src="img/go.svg" alt="repair-item">
+      <div class="repair-item">Ремонт наушников</div>
+      <img src="img/go.svg" alt="repair-item">
+      <div class="repair-item">Ремонт часов</div>
+      <img src="img/go.svg" alt="repair-item">
+      <div class="repair-item">Ремонт мониторов</div>
+      <img src="img/go.svg" alt="repair-item">
+      <div class="repair-item">Ремонт</div>
+      <img src="img/go.svg" alt="repair-item">
+    </div>
 
-     
-
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
-
-
