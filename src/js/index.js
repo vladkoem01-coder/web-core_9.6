@@ -1,5 +1,6 @@
 import '../scss/style.scss'
 
+// Открывает и закрывает бургер меню
 const menu = document.querySelector('.left-menu')
 const openBtn = document.querySelector('.burger')
 const closeBtn = document.querySelector('.left-menu-remove')
@@ -11,28 +12,40 @@ closeBtn.addEventListener('click', () => {
   menu.classList.remove('active')
 })
 
+// Свайпер для брендов
+document.addEventListener('DOMContentLoaded', () => {
 
-
-
- document.addEventListener('DOMContentLoaded', () => {
-
-  const swiper = new Swiper('.swiper', {
+  new Swiper('.swiper-brands', {
     slidesPerView: 'auto',
     spaceBetween: 16,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.brands-pagination',
       clickable: true,
     },
   });
 
-  const button = document.getElementById('buttonShowMore');
-  const container = document.querySelector('.grid');
+  new Swiper('#repairSwiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 16,
+    pagination: {
+      el: '.repair-pagination',
+      clickable: true,
+    },
+  });
 
-  const collapsedHeight = 160;
+});
+
+  // Кнопка 'Показать все'
+  const blocks = document.querySelectorAll('.block');
+const collapsedHeight = 160;
+
+blocks.forEach(block => {
+  const button = block.querySelector('.buttonShowMore');
+  const container = block.querySelector('.grid, .repair');
+
   let isOpen = false;
 
   function updateLayout() {
-
     if (window.innerWidth >= 768) {
       container.style.height = collapsedHeight + 'px';
       container.style.overflow = 'hidden';
@@ -44,18 +57,17 @@ closeBtn.addEventListener('click', () => {
     }
   }
 
-button.addEventListener('click', () => {
+  button.addEventListener('click', () => {
     if (!isOpen) {
       container.style.height = container.scrollHeight + 'px';
       button.textContent = 'Скрыть';
     } else {
       container.style.height = collapsedHeight + 'px';
-      button.textContent = 'Показать всё';
+      button.textContent = 'Показать все';
     }
     isOpen = !isOpen;
   });
 
   updateLayout();
   window.addEventListener('resize', updateLayout);
-
 });
