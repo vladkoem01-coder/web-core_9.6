@@ -1,10 +1,6 @@
 @use 'variables' as *;
 @use 'mixin' as *;
 
-@font-face {
-  font-family: 'TTLakes';
-  src: url(../fonts/TTLakes/TTLakes-Regular.ttf) format('truetype');
-}
 h1 {
   background: $bg-gradient;
   font-size: 16px;
@@ -14,78 +10,82 @@ h1 {
   text-transform: uppercase;
   padding: 16px;
   border-top: 1px solid $border-accent;
-  color: black;
 }
 
-.swiper-brands {
+.swiper {
   height: 154px;
-  box-sizing: border-box;
-
-  @media (min-width: $desktop) {
-    display: none;
-  }
 }
 
 .grid {
   display: none;
-
-  @media (min-width: $desktop) {
-    display: grid;
-    height: 160px;
-    overflow: hidden;
-  }
 }
 
 .grid-wrapper {
-  @media (min-width: $desktop) {
-    @include grid-cols(3);
-    transition: height 0.4s ease;
-  }
-
-  @media (min-width: $desktop) {
-    @include grid-cols(4);
-  }
 }
+
 
 .slides {
   background-color: $white;
   @include flex-between;
+
   padding: 16px 0 16px 16px;
   width: 240px;
   height: 72px;
+
   border: 1px solid $border-card;
   border-radius: $radius;
-
-  @media (min-width: $desktop) {
-    width: 100%;
-  }
-}
-
-.brands-pagination {
-  @media (min-width: $desktop) {
-    display: none;
-  }
 }
 
 .container-box-button-next {
   margin: 16px;
 }
 
-.show-more {
+#show-more {
   display: none;
 
-  @media (min-width: $desktop) {
+  #buttonShowMore {
+    @include btn-reset;
+    font-size: 16px;
+    color: $text-main;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+@media (min-width: $table) {
+  .swiper {
+    display: none;
+  }
+
+  .grid {
+    display: grid;
+    height: 160px;
+    overflow: hidden;
+  }
+
+  .grid-wrapper {
+    @include grid-cols(3);
+    transition: height 0.4s ease;
+  }
+
+  .slides {
+    width: 100% !important;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  #show-more {
     display: flex;
     margin-top: 24px;
   }
 }
 
-.buttonShowMore {
-  @include btn-reset;
-  font-size: 16px;
-  color: $text-main;
-
-  &:hover {
-    color: $accent;
+@media (min-width: $desktop) {
+  .grid-wrapper {
+    grid-template-columns: repeat(4, 1fr);
   }
 }

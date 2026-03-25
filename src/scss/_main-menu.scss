@@ -1,9 +1,6 @@
 @use 'variables' as *;
 
-@font-face{
-    font-family: 'TTLakes';
-    src: url(../fonts/TTLakes/TTLakes-Regular.ttf) format("truetype");
-} 
+@use 'mixin' as *;
 
 .slide-menu {
   display: flex;

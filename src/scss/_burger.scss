@@ -1,118 +1,89 @@
 @use 'variables' as *;
-@font-face{
-    font-family: 'TTLakes';
-    src: url(../fonts/TTLakes/TTLakes-Regular.ttf) format("truetype");
-}
-.left-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: $sidebar-width;
-  height: 100vh;
-  background: $sidebar-bg;
-  z-index: 100;
+@use 'mixin' as *;
 
+.left-menu {
   display: flex;
   flex-direction: column;
+  max-width: $sidebar-width;
+  height: 100%;
 
-  transition: transform $transition;
+  background-color: $white;
+  box-shadow: $sidebar-shadow;
+
+  position: fixed;
+  z-index: 2;
+  overflow-y: auto;
 
   &-header {
-    display: flex;
-    align-items: center;
     padding-top: 18px;
-  }
 
-  .servis {
+    .left-icon {
+      margin-left: 10px;
+    }
+
+    .right-icon {
+      margin-left: 90px;
+    }
+  }
+}
+.left-menu-close{
+  background: none;
+  border: none;
+}
+
+.servis {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 50.46px;
+
+  &__item {
     display: flex;
-    flex-direction: column;
-    gap: 32px;
-    margin-top: 50px;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    padding-left: 24px;
 
-    &__item {
-      display: flex;
-      background: transparent;
-      border: none;
-      font-size: 16px;
-      padding-left: 24px;
-      cursor: pointer;
-
-      &:hover {
-        border-left: 4px solid $accent;
-        color: $text-hover;
-      }
-    }
-  }
-
-  .contact-inf {
-    margin-top: auto;
-    margin-left: 24px;
-    margin-bottom: 40px;
-    color: black;
-
-    .inf-type {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 16px;
-    }
-
-    .contact-number {
-      font-size: 24px;
-      font-weight: bold;
-    }
-  }
-
-  .lang {
-    display: flex;
-    gap: 7px;
-    color: black;
-    margin-left: 24px;
-    margin-bottom: 32px;
-
-    &_item {
-      cursor: pointer;
-
-      &:hover {
-        color: $text-hover;
-      }
+    &:hover {
+      border-left: 4px solid $accent;
+      color: $text-hover;
     }
   }
 }
 
-.left-icon {
-  margin-left: 10px;
-  cursor: pointer;
+.contact-inf {
+  margin: 0 76px 40px 24px;
+  margin-top: auto;
+  gap: 10px;
+
+  img {
+    margin-right: 10px;
+  }
+
+  .contact-number {
+    font-size: 24px;
+  }
 }
 
-.right-icon {
-  margin-left: auto;
-  margin-right: 20px;
-  cursor: pointer;
-}
+.lang {
+  display: flex;
+  margin: 0 209px 10px 24px;
+  gap: 7px;
 
-@media (max-width: 1119px) {
-  .left-menu {
-    transform: translateX(-100%);
-
-    &.active {
-      transform: translateX(0);
+  &_item {
+    &:hover {
+      color: $text-hover;
     }
   }
 }
 
-@media (min-width: 1120px) {
+.inf-type {
+  display: inline-flex;
+}
 
-  .left-menu {
-    transform: translateX(0);
-    transition: 0.3s;
-    position: fixed;
-  }
-
-  .main-content {
-    margin-left: $sidebar-width;
-  }
-
-  .burger {
-    display: none;
-  }
+.right-menu-text {
+  position: relative;
+  top: -1000px;
+  left: 350px;
+  z-index: 1;
 }
