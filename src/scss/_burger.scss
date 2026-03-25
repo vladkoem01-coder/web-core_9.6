@@ -11,8 +11,12 @@
   box-shadow: $sidebar-shadow;
 
   position: fixed;
-  z-index: 2;
+  z-index: 10000;
   overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+
+
 
   &-header {
     padding-top: 18px;
@@ -26,9 +30,14 @@
     }
   }
 }
+
 .left-menu-close{
   background: none;
   border: none;
+}
+
+.left-menu.active {
+  transform: translateX(0);
 }
 
 .servis {
@@ -87,3 +96,18 @@
   left: 350px;
   z-index: 1;
 }
+
+@media (min-width:$desktop) {
+  .left-menu {
+    transform: translateX(0);
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 320px;
+  }
+}
+
