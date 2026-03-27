@@ -42,9 +42,11 @@
           <img src="img/profile.svg" alt="your profile" />
         </div>
 
-        <div> mail@cps.com </div>
         <div class="contact-number">
-          <strong>8 800 890 8900</strong>
+          mail@cps.com
+          <div>
+            <strong>8 800 890 8900</strong>
+          </div>
         </div>
       </div>
       <div class="lang">
@@ -75,7 +77,7 @@
 
       <!-- DESKTOP MENU -->
       <section class="upper-menu">
-        <h2>Услуги и сервисы</h2>
+        <h2><strong>Услуги и сервисы</strong></h2>
 
         <div class="upper-menu__right">
           <div class="menu-item">
@@ -125,7 +127,7 @@
       <!-- различные бренды -->
       <h1>РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1>
 
-      <div class="swiper">
+      <div class="swiper brands">
         <div class="swiper-wrapper" id="swiperWrapper">
           <div class="swiper-slide slides">
             <img src="img/acer.png" alt="Acer" />
@@ -307,50 +309,138 @@
         <h1 class="price-slider__title">Цены на услуги</h1>
         <div class="swiper-wrapper price-wrapper">
           <div class="swiper-slide price-item">
-            <p> Ремонтные услуги</p>
-            <p>Диагностика</p>
-            <p>Цена</p>
-            <p>Бесплатно</p>
-            <p>Срок</p>
-            <p>30 мин</p>
+            <div>
+              <span> Ремонтные услуги</span>
+              <p>Диагностика</p>
+            </div>
+            <div>
+              <span>Цена</span>
+              <p>Бесплатно</p>
+            </div>
+            <div>
+              <span>Срок</span>
+              <p>30 мин</p>
+              <img class="price-btn" src="./img/Group 10.svg" alt="order" />
+            </div>
+          </div>
+
+          <div class="swiper-slide price-item">
+            <div>
+              <span> Ремонтные услуги</span>
+              <p>Замена дисплея</p>
+            </div>
+            <div>
+              <span>Цена</span>
+              <p>1 000 ₽</p>
+            </div>
+            <div>
+              <span>Срок</span>
+              <p>30-120 мин</p>
+              <img class="price-btn" src="./img/Group 10.svg" alt="order" />
+            </div>
           </div>
           <div class="swiper-slide price-item">
-            <p> Ремонтные услуги</p>
-            <p>Замена дисплея</p>
-            <p>Цена</p>
-            <p>1 000 ₽</p>
-            <p>Срок</p>
-            <p>30-120 мин</p>
+            <div>
+              <span> Ремонтные услуги</span>
+              <p>Замена полифонического динамика</p>
+            </div>
+            <div>
+              <span>Цена</span>
+              <p>1 000 ₽</p>
+            </div>
+            <div>
+              <span>Срок</span>
+              <p>30-120 мин</p>
+              <img
+                class="price-btn"
+                src="./img/Group 10.svg"
+                alt="order"
+              /> </div
+            >>
           </div>
           <div class="swiper-slide price-item">
-            <p> Ремонтные услуги</p>
-            <p>Замена полифонического динамика</p>
-            <p>Цена</p>
-            <p>1 000 ₽</p>
-            <p>Срок</p>
-            <p>30-120 мин</p>
+            <div>
+              <span> Ремонтные услуги</span>
+              <p>Тестирование с выдачей технического заключения</p>
+            </div>
+            <div>
+              <span>Цена</span>
+              <p>1 000 ₽</p>
+            </div>
+            <div>
+              <span>Срок</span>
+              <p>30-120 мин</p>
+              <img class="price-btn" src="./img/Group 10.svg" alt="order" />
+            </div>
           </div>
           <div class="swiper-slide price-item">
-            <p> Ремонтные услуги</p>
-            <p>Тестирование с выдачей технического заключения</p>
-            <p>Цена</p>
-            <p>1 000 ₽</p>
-            <p>Срок</p>
-            <p>30-120 мин</p>
-          </div>
-          <div class="swiper-slide price-item">
-            <p> Ремонтные услуги</p>
-            <p>Замена программного обеспечения</p>
-            <p>Цена</p>
-            <p>1 000 ₽</p>
-            <p>Срок</p>
-            <p>30-120 мин</p>
+            <div>
+              <span> Ремонтные услуги</span>
+              <p>Замена программного обеспечения</p>
+            </div>
+            <div>
+              <span>Цена</span>
+              <p>1 000 ₽</p>
+            </div>
+            <div>
+              <span>Срок</span>
+              <p>30-120 мин</p>
+              <img class="price-btn" src="./img/Group 10.svg" alt="order" />
+            </div>
           </div>
         </div>
-        <div class="swiper-pagination"> </div>
+        <div class="swiper-pagination pagination-price"> </div>
       </div>
 
-      <section class="price-grid"> </section>
+      <div class="price-grid">
+        <h1>Цены на услуги</h1>
+        <div class="price-row">
+          <div class="price-row_header">Ремонтные услуги</div>
+          <div class="price-row_header">Цена</div>
+          <div class="price-row_header">Срок</div>
+          <div class="price-row_header"></div>
+        </div>
+        <div class="price-row">
+          <div class="price-row_name">Диагностика</div>
+          <div class="price-row__price">Бесплатно</div>
+          <div class="price-row_time">30 мин</div>
+          <button class="price-row_btn">
+            <img src="./img/Group 10.svg" alt="order" />
+          </button>
+        </div>
+        <div class="price-row">
+          <div class="price-row_name">Замена дисплея</div>
+          <div class="price-row__price">1 000 ₽</div>
+          <div class="price-row_time">30-120 мин</div>
+          <button class="price-row_btn">
+            <img src="./img/Group 10.svg" alt="order" />
+          </button>
+        </div>
+        <div class="price-row">
+          <div class="price-row_name">Замена полифонического динамика</div>
+          <div class="price-row__price">1 000 ₽</div>
+          <div class="price-row_time">30-120 мин</div>
+          <button class="price-row_btn">
+            <img src="./img/Group 10.svg" alt="order" />
+          </button>
+        </div>
+        <div class="price-row">
+          <div class="price-row_name">Тестирование с выдачей технического заключения</div>
+          <div class="price-row__price">1 000 ₽</div>
+          <div class="price-row_time">30-120 мин</div>
+          <button class="price-row_btn">
+            <img src="./img/Group 10.svg" alt="order" />
+          </button>
+        </div>
+        <div class="price-row">
+          <div class="price-row_name">Замена программного обеспечения</div>
+          <div class="price-row__price">1 000 ₽</div>
+          <div class="price-row_time">30-120 мин</div>
+          <button class="price-row_btn">
+            <img src="./img/Group 10.svg" alt="order" />
+          </button>
+        </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

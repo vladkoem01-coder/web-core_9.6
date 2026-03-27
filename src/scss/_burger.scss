@@ -19,6 +19,7 @@
 
 
   &-header {
+      background-color: $white;
     padding-top: 18px;
 
     .left-icon {
@@ -41,6 +42,7 @@
 }
 
 .servis {
+  background-color: $white;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -61,6 +63,7 @@
 }
 
 .contact-inf {
+  background-color: $white;
   margin: 0 76px 40px 24px;
   margin-top: auto;
   gap: 10px;
@@ -71,10 +74,12 @@
 
   .contact-number {
     font-size: 24px;
+    background-color: $white;
   }
 }
 
 .lang {
+  background-color: $white;
   display: flex;
   margin: 0 209px 10px 24px;
   gap: 7px;
@@ -88,6 +93,9 @@
 
 .inf-type {
   display: inline-flex;
+  img{
+        background-color: $white;
+  }
 }
 
 .right-menu-text {

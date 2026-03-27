@@ -1,3 +1,58 @@
 @use 'variables' as *;
 @use 'mixin' as *;
 
+.price-item {
+  padding: 16px;
+  border: 1px solid $border-card;
+  border-radius: $radius;
+  background-color: #fff; /* чтобы был как карточка */
+  width: 260px;
+  height: 260px;
+  margin-bottom: 36px; /* отступ между блоками */
+
+  span {
+    color: #7e7e82;
+  }
+}
+.price-item > div:last-child {
+  position: relative;
+  padding-bottom: 24px;
+}
+
+.price-btn {
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+}
+.price-grid {
+  display: none;
+}
+
+@media (min-width: $table) {
+  .price-slider {
+    display: none;
+  }
+
+  .price-grid {
+    display: grid;
+    background-color: $white;
+  }
+
+  .price-row {
+    display: grid;
+    grid-template-columns: 1fr 100px 100px 150px;
+    gap: 20px;
+    align-items: center;
+
+    .price-btn {
+      background-color: $white;
+    }
+    &_header {
+      background-color: #f8f8f8;
+      padding: 21px;
+    }
+    &_name {
+      padding: 20px;
+    }
+  }
+}
