@@ -4,6 +4,7 @@
 @use 'main-menu';
 @use 'repair-tech';
 @use 'price';
+@use 'footer';
 
 @use 'mixin';
 @use 'variables';
@@ -22,3 +23,6 @@ body{
     background-color:#f8f8f8;
 }
 
+.main-content{
+    box-sizing: border-box;
+}

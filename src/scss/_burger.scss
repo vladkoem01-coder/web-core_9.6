@@ -107,6 +107,7 @@
 
 @media (min-width:$desktop) {
   .left-menu {
+    box-shadow: none;
     transform: translateX(0);
   }
 
@@ -117,5 +118,6 @@
   .main-content {
     margin-left: 320px;
   }
+  
 }
 

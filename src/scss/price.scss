@@ -35,7 +35,6 @@
 
   .price-grid {
     display: grid;
-    background-color: $white;
   }
 
   .price-row {
@@ -55,4 +54,20 @@
       padding: 20px;
     }
   }
+}
+
+.comment-text {
+  box-sizing: border-box;
+  width: 421px;
+  height: 60px;
+  margin-bottom: 16px;
+}
+
+.comment_btn {
+  background: none;
+  border: none;
+  display: flex;
+  font-size: 15px;
+  margin-top: 16px;
+  padding-top: 16px;
 }

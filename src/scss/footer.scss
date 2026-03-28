@@ -1,0 +1,20 @@
+@use 'variables' as *;
+@use 'mixin' as *;
+
+.footer-inf {
+  text-align: center;
+}
+
+@media (min-width: $table) {
+  .footer-inf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_left {
+      text-align: start;
+    }
+    &_right {
+      text-align: end;
+    }
+  }
+}
