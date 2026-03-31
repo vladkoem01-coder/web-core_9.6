@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const button = document.getElementById('buttonShowMore');
   const container = document.querySelector('.grid');
-
+  
   const collapsedHeight = 160;
   let isOpen = false;
 
@@ -82,3 +82,41 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', updateLayout);
 
 });
+
+const button = document.querySelector('.buttonShowMore');
+const container = document.querySelector('.grid-repair');
+
+const collapsedHeight = 160;
+let isOpen = false;
+
+// проверка экрана
+function updateLayout() {
+  if (window.innerWidth >= 768) {
+    if (!isOpen) {
+      container.style.maxHeight = collapsedHeight + 'px';
+      container.style.overflow = 'hidden';
+    }
+    button.parentElement.style.display = 'flex';
+  } else {
+    container.style.maxHeight = '';
+    container.style.overflow = '';
+    button.parentElement.style.display = 'none';
+  }
+}
+
+// клик по кнопке
+button.addEventListener('click', () => {
+  isOpen = !isOpen;
+
+  if (isOpen) {
+    container.style.maxHeight = container.scrollHeight + 'px';
+    button.textContent = 'Скрыть';
+  } else {
+    container.style.maxHeight = collapsedHeight + 'px';
+    button.textContent = 'Показать все';
+  }
+});
+
+// запуск
+updateLayout();
+window.addEventListener('resize', updateLayout);

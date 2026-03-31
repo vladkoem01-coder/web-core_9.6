@@ -68,6 +68,15 @@
           <img src="img/Group.png" alt="logo" />
         </div>
 
+        <div class="header__img__right">
+        <img src="img/call.svg" class="tablet" alt="Call">
+        <img src="img/chat.svg" class="tablet" alt="Chat">
+        <img src="img/profile.svg" class="tablet" alt="Profile">
+        <img src="img/divider.svg" alt="line">
+        <img src="img/repair.svg" alt="repair">
+        <img src="img/finder.svg" alt="finder">
+    </div>
+
         <div class="header__right">
           <img src="img/divider.svg" alt="" />
           <img src="img/repair.svg" alt="" />
@@ -113,12 +122,10 @@
           >
           <p class="tab-version-text"
             >Мы успешно работаем с 1992 года и заслужили репутацию надежного
-            партнера<span class="desktop-version-text"
-              >, что подтверждает большое количество постоянных клиентов. Мы
-              гордимся тем, что к нам обращаются по рекомендациям и, в свою
-              очередь, советуют нас родным и близким.</span
-            ></p
-          >
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
           <img src="img/ReadMore Copy.svg" class="readmore" alt="ReadMore" />
         </div>
         <img src="img/image.svg" alt="first-block" class="main-image" />
@@ -297,12 +304,49 @@
             <div class="swiper-pagination repair-pagination"></div>
           </div>
         </div>
+<!-- Repair Tech Desktop  -->
 
-        <div class="show-more">
+          <div class="grid-repair">
+            <div class="grid-repair-item">
+              Ремонт ноутбуков
+              <img src="img/go.svg" class="repair-item_next" alt="Go" />
+            </div>
+
+            <div class="grid-repair-item">
+              Ремонт планшетов
+              <img src="img/go.svg" class="repair-item_next" alt="Go" />
+            </div>
+
+            <div class="grid-repair-item">
+              Ремонт ПК
+              <img src="img/go.svg" class="repair-item_next" alt="Go" />
+            </div>
+
+            <div class="grid-repair-item">
+              Ремонт наушников
+              <img src="img/go.svg" class="repair-item_next" alt="Go" />
+            </div>
+
+            <div class="grid-repair-item">
+              Ремонт часов
+              <img src="img/go.svg" class="repair-item_next" alt="Go" />
+            </div>
+
+            <div class="grid-repair-item">
+              Ремонт мониторов
+              <img src="img/go.svg" class="repair-item_next" alt="Go" />
+            </div>
+
+            <div class="grid-repair-item">
+              Ремонт
+              <img src="img/go.svg" class="repair-item_next" alt="Go" />
+            </div>
+          </div>
+
+        <div class="show-more-repair">
           <img src="img/expand.svg" alt="Show all" />
           <button class="buttonShowMore">Показать все</button>
         </div>
-      </div>
 
       <!-- Цены на услгуи -->
       <div class="price-slider swiper">
@@ -351,12 +395,8 @@
             <div>
               <span>Срок</span>
               <p>30-120 мин</p>
-              <img
-                class="price-btn"
-                src="./img/Group 10.svg"
-                alt="order"
-              /> </div
-            >>
+              <img class="price-btn" src="./img/Group 10.svg" alt="order" />
+            </div>
           </div>
           <div class="swiper-slide price-item">
             <div>
@@ -392,83 +432,92 @@
         <div class="swiper-pagination pagination-price"> </div>
       </div>
 
-      <div class="price-grid">
-        <h1>Цены на услуги</h1>
-        <div class="price-row">
-          <div class="price-row_header">Ремонтные услуги</div>
-          <div class="price-row_header">Цена</div>
-          <div class="price-row_header">Срок</div>
-          <div class="price-row_header"></div>
+      <table class="price-grid">
+        <caption>Цены на услуги</caption>
+        <thead>
+          <tr class="price-row">
+            <th class="price-row_header">Ремонтные услуги</th>
+            <th class="price-row_header">Цена</th>
+            <th class="price-row_header">Срок</th>
+            <th class="price-row_header"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="price-row">
+            <td class="price-row_name">Диагностика</td>
+            <td class="price-row__price">Бесплатно</td>
+            <td class="price-row_time">30 мин</td>
+            <td>
+              <button class="price-row_btn">Заказать ></button>
+            </td>
+          </tr>
+          <tr class="price-row">
+            <td class="price-row_name">Замена дисплея</td>
+            <td class="price-row__price">1 000 ₽</td>
+            <td class="price-row_time">30-120 мин</td>
+            <td>
+              <button class="price-row_btn">Заказать ></button>
+            </td>
+          </tr>
+          <tr class="price-row">
+            <td class="price-row_name">Замена полифонического динамика</td>
+            <td class="price-row__price">1 000 ₽</td>
+            <td class="price-row_time">30-120 мин</td>
+            <td>
+              <button class="price-row_btn"> Заказать ></button>
+            </td>
+          </tr>
+          <tr class="price-row">
+            <td class="price-row_name"
+              >Тестирование с выдачей технического заключения</td
+            >
+            <td class="price-row__price">1 000 ₽</td>
+            <td class="price-row_time">30-120 мин</td>
+            <td>
+              <button class="price-row_btn">Заказать ></button>
+            </td>
+          </tr>
+          <tr class="price-row">
+            <td class="price-row_name">Замена программного обеспечения</td>
+            <td class="price-row__price">1 000 ₽</td>
+            <td class="price-row_time">30-120 мин</td>
+            <td>
+              <button class="price-row_btn">Заказать ></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="comment">
+        <div class="comment-text">
+          Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную
+          услугу. Для получения коммерческого предложения на постоянное
+          обслуживание, оставьте заявку.
         </div>
-        <div class="price-row">
-          <div class="price-row_name">Диагностика</div>
-          <div class="price-row__price">Бесплатно</div>
-          <div class="price-row_time">30 мин</div>
-          <button class="price-row_btn">
-            <img src="./img/Group 10.svg" alt="order" />
-          </button>
-        </div>
-        <div class="price-row">
-          <div class="price-row_name">Замена дисплея</div>
-          <div class="price-row__price">1 000 ₽</div>
-          <div class="price-row_time">30-120 мин</div>
-          <button class="price-row_btn">
-            <img src="./img/Group 10.svg" alt="order" />
-          </button>
-        </div>
-        <div class="price-row">
-          <div class="price-row_name">Замена полифонического динамика</div>
-          <div class="price-row__price">1 000 ₽</div>
-          <div class="price-row_time">30-120 мин</div>
-          <button class="price-row_btn">
-            <img src="./img/Group 10.svg" alt="order" />
-          </button>
-        </div>
-        <div class="price-row">
-          <div class="price-row_name">Тестирование с выдачей технического заключения</div>
-          <div class="price-row__price">1 000 ₽</div>
-          <div class="price-row_time">30-120 мин</div>
-          <button class="price-row_btn">
-            <img src="./img/Group 10.svg" alt="order" />
-          </button>
-        </div>
-        <div class="price-row">
-          <div class="price-row_name">Замена программного обеспечения</div>
-          <div class="price-row__price">1 000 ₽</div>
-          <div class="price-row_time">30-120 мин</div>
-          <button class="price-row_btn">
-            <img src="./img/Group 10.svg" alt="order" />
+        <div>
+          <button class="comment_btn">
+            <strong>Получить коммерческое предложение</strong>
+            <img
+              src="./img/more-comment-btn-svg.svg"
+              alt="show more in comment"
+            />
           </button>
         </div>
       </div>
-<div class="comment">
-  <div class="comment-text">
-    Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
-  </div>
-  <div>
-    <button class="comment_btn">
-      <strong>Получить коммерческое предложение</strong>
-      <img src="./img/more-comment-btn-svg.svg" alt="show more in comment">
-    </button>
-  </div>
-</div>
 
-<footer>
-  <div class="footer-inf">
-  <div class="footer-inf_left">
-    © 2019 CPS
-Разработано командой Apesong 
-  </div>
-  <div>
-    Политика конфиденциальности
-  </div>
-  <div class="footer-inf_right">
-    Информация, размещенная на данной странице, не является публичной офертой
-  </div>
-  </div>
-</footer>
-
+      <footer>
+        <div class="footer-inf">
+          <div class="footer-inf_left">
+            © 2019 CPS Разработано командой Apesong
+          </div>
+          <div> Политика конфиденциальности </div>
+          <div class="footer-inf_right">
+            Информация, размещенная на данной странице, не является публичной
+            офертой
+          </div>
+        </div>
+      </footer>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

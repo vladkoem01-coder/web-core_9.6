@@ -1,7 +1,11 @@
 @use 'variables' as *;
 @use 'mixin' as *;
 
-.repair-tech h1 {
+.grid-repair {
+  display: none;
+}
+
+.repair-tech {
   background: $bg-gradient;
   font-size: 16px;
   font-weight: 400;
@@ -14,70 +18,43 @@
 }
 
 .repair {
+  margin-left: 24px;
   gap: 32px;
   box-sizing: border-box;
-  &-swiper {
-    display: flex;
-    padding-bottom: 40px;
-    @media (min-width: $desktop) {
-      transition: max-height 0.3s ease;
-      .repair-swiper {
-        width: 100%;
-      }
-
-      .repair-swiper .swiper-wrapper {
-        display: grid;
-        grid-template-columns: repeat(4, 2fr);
-        gap: 16px;
-      }
-
-      .repair-swiper .swiper-slide {
-        width: 100% !important;
-      }
-    }
-  }
-
-  .repair-item {
-    display: flex;
-    align-items: start;
-    background-color: $white;
-    padding: 16px;
-    width: 240px;
-    height: 160px;
-    border: 1px solid $border-card;
-    position: relative;
-    &_next {
-      position: absolute;
-      bottom: 16px;
-      right: 16px;
-    }
-  }
 }
+
+.repair-swiper {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.repair-item {
+  display: flex;
+  align-items: start;
+  background-color: $white;
+  padding: 16px;
+  width: 240px;
+  height: 160px;
+  border: 1px solid $border-card;
+  position: relative;
+}
+
+.repair-item_next {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+}
+
 .repair-pagination {
-  @media (min-width: $desktop) {
-    display: none;
-  }
+  display: block;
 }
 
-@media (min-width: $desktop) {
-  .repair {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-  }
+.show-more-repair {
+  display: none;
 }
 
 .container-box-button-next {
   margin: 16px;
-}
-
-.show-more {
-  display: none;
-
-  @media (min-width: $desktop) {
-    display: flex;
-    margin-top: 24px;
-  }
 }
 
 .buttonShowMore {
@@ -87,5 +64,46 @@
 
   &:hover {
     color: $accent;
+  }
+}
+
+@media (min-width: $table) {
+
+  .repair {
+    display: none;
+  }
+
+  .grid-repair {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    transition: height 0.4s ease;
+    gap: 10px;
+    margin-left: 24px;
+  }
+
+  .grid-repair-item{
+    display: flex;
+  align-items: start;
+  background-color: $white;
+  padding: 16px;
+  width: 240px;
+  height: 160px;
+  border: 1px solid $border-card;
+  position: relative;
+  }
+
+  .repair-pagination {
+    display: none;
+  }
+
+  .show-more-repair {
+    display: flex;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: $desktop){
+  .grid-repair{
+       grid-template-columns: repeat(4, 1fr); 
   }
 }

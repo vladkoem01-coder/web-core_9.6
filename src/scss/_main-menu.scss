@@ -93,7 +93,6 @@
 
 .text {
   width: 100%;
-  border: 2px solid #FFFFFF;
 }
 
 .text-block {
@@ -111,8 +110,16 @@
 .tab-version-text {
   display: none;
 }
+.header__img__right{
+  display: none;
+}
 
 @media (min-width: $table) {
+
+  .header__img__right{
+    display: flex;
+  }
+  
   body {
     max-width: 100%;
   }
@@ -126,15 +133,11 @@
   }
 
   .header {
-    &__img {
-      gap: 20px;
-
       &__right {
-        gap: 20px;
+        display: none;
       }
     }
-  }
-
+  
   .tab-version-text {
     display: block;
   }
@@ -146,12 +149,7 @@
 
 @media (min-width: $desktop) {
   .header {
-    border-bottom: none;
-
-    &__img,
-    &__img__right {
-      display: none;
-    }
+    display: none;
   }
 
   .upper-menu {
@@ -178,5 +176,8 @@
 
   .slide-menu {
     flex-wrap: wrap;
+  }
+  .header__img__right{
+    display: none;
   }
 }
