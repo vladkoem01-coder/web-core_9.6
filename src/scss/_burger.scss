@@ -32,6 +32,8 @@
   }
 }
 
+
+
 .left-menu-close{
   background: none;
   border: none;
@@ -109,11 +111,21 @@
   .left-menu {
     box-shadow: none;
     transform: translateX(0);
+    display: flex;
+    justify-content: space-between;
   }
 
-  .burger {
+  .left-menu-close{
     display: none;
   }
+
+.left-menu{
+  &-header{
+    .right-icon{
+      margin-left: 150px;
+    }
+  }
+}
 
   .main-content {
     margin-left: 320px;

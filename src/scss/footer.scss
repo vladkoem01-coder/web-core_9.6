@@ -2,13 +2,15 @@
 @use 'mixin' as *;
 
 .footer-inf {
-    margin-top: 40px;
+  margin-top: 40px;
   text-align: center;
+  margin-left: 24px;
 }
 
 @media (min-width: $table) {
   .footer-inf {
     display: flex;
+    margin-left: 24px;
     justify-content: space-between;
     align-items: center;
     &_left {
