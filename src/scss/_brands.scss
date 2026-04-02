@@ -21,7 +21,6 @@ h1 {
   display: none;
 }
 
-
 .slides {
   margin-left: 24px;
   background-color: $white;
@@ -62,10 +61,7 @@ h1 {
     display: grid;
     height: 160px;
     overflow: hidden;
-  }
-
-  .grid-wrapper {
-    @include grid-cols(3);
+ grid-template-columns: repeat(3, 1fr);
     transition: height 0.4s ease;
   }
 
@@ -84,7 +80,7 @@ h1 {
 }
 
 @media (min-width: $desktop) {
-  .grid-wrapper {
+  .grid {
     grid-template-columns: repeat(4, 1fr);
   }
 }
