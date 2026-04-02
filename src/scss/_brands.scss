@@ -61,7 +61,8 @@ h1 {
     display: grid;
     height: 160px;
     overflow: hidden;
- grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
     transition: height 0.4s ease;
   }
 
